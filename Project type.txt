@@ -1,0 +1,30 @@
+Satya Ranjan Sahoo
+Phone: 9348978725
+
+Arbitrary Precision Calculator Using Double Linked List (C Programming)
+Project Overview: The Arbitrary Precision Calculator is a program designed to perform arithmetic operations (addition, subtraction, multiplication, and division) on large numbers that exceed the size limitations of standard data types. This calculator uses a double linked list to store each digit of the number, allowing for efficient manipulation of very large integers, often referred to as "big integers."
+
+The calculator is capable of handling operations on numbers with a potentially unlimited number of digits, making it suitable for applications in cryptography, scientific calculations, or any domain where large integer values are common.
+
+Features:
+
+Addition (+): The calculator supports addition of large numbers by handling carries between digits and utilizing the double linked list for efficient traversal.
+Subtraction (-): Subtraction of large numbers, including borrowing, is handled by adjusting each node in the linked list accordingly.
+Multiplication (*): The multiplication function handles large numbers by multiplying each digit of one number with every digit of the other, and then adjusting for carries and placements.
+Division (/): The division operation handles long division using double linked lists, implementing the algorithm step by step to ensure precision for each digit.
+Display Result: The calculator can display the result as a large number by traversing the linked list from the most significant digit to the least significant digit.
+Technical Details:
+
+Data Structure Used: The core of the calculator uses a double linked list to store each digit of a large number. Each node in the list represents a single digit, and the links allow for easy traversal and manipulation of digits in both directions.
+Arithmetic Operations: Each arithmetic operation (+, -, *, /) is implemented by iterating through the linked list and performing the necessary digit-wise operations.
+Addition and Subtraction: These operations handle carry and borrow operations through the nodes.
+Multiplication: Uses a method similar to long multiplication, iterating over each digit and storing the partial results in linked list nodes.
+Division: Implements a long division algorithm, where each digit is processed step by step.
+Memory Management: Dynamic memory allocation is used for the double linked list, ensuring that the size of the number can grow as needed.
+Input/Output: The program allows users to input long numbers as strings, which are then converted into the double linked list format for processing. The output is displayed by converting the linked list back to a string format.
+Challenges & Learnings:
+
+Managing Large Numbers: The primary challenge in this project was to handle extremely large numbers and ensure that each arithmetic operation worked correctly, regardless of the number of digits involved.
+Double Linked List Operations: Implementing a double linked list for storing each digit required a deeper understanding of pointer manipulation, memory allocation, and deallocation.
+Efficient Arithmetic: Ensuring that operations like multiplication and division were optimized to handle large numbers without performance degradation was a significant learning point.
+Conclusion: This Arbitrary Precision Calculator showcases my ability to implement a fundamental data structure (double linked list) to solve a real-world problem of handling large integers. The project not only demonstrates my skills in C programming but also highlights my ability to manage memory effectively and implement complex algorithms for arithmetic operations on large data sets.
